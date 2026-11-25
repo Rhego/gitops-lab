@@ -1,0 +1,6 @@
+# Ejemplo de validación de MR para el repo GitOps (úsalo si montas GitLab CE aparte).
+validate:
+  image: registry.k8s.io/kustomize/kustomize:v5.4.2
+  script:
+    - kustomize build apps/hello/overlays/dev > /tmp/out.yaml
+    - test -s /tmp/out.yaml

@@ -1,0 +1,7 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base
+images:
+  - name: ghcr.io/stefanprodan/podinfo
+    newTag: 6.7.0          # ejercicio 2: cambia a 6.7.1; ejercicio de fallo: usa 6.7.99-no-existe
