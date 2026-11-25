@@ -36,3 +36,4 @@ Después clona tu repo aparte (no uses .work/) y haz los cambios del lab sobre e
 make destroy
 ```
 # gitops-lab
+# gitops-lab
